@@ -1,0 +1,587 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background:  linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+    min-width: 1440px;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100vw;
+    height: 700px;
+    background: url(img/headbc.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 行头 */
+.main-head {
+    display: flex;
+    width: 80%;
+    height: 44px;
+    margin-left: 3%;
+    padding-top: 1.5%;
+}
+
+.xtu-logo1 {
+    width: 42px;
+    height: 42px;
+    background: url(img/xtu-logo1.png) no-repeat;
+    background-size: 100%;
+}
+
+.xtu-logo2 {
+    width: 118px;
+    height: 42px;
+    background: url(img/xtu-logo2.png) no-repeat;
+    background-size: 100%;
+    margin-left: 10px;
+}
+
+.sune-logo {
+    width: 104px;
+    height: 42px;
+    background: url(img/suneschool-logo.png) no-repeat;
+    background-size: 100%;
+    margin-left: 25px;
+}
+
+/* 菜单栏 */
+.menu {
+    width: 732px;
+    height: 30.07px;
+    z-index: 10;
+    margin-left: 240.45px;
+    display: flex;
+}
+
+.menu-body {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-body li {
+    margin-right: 40px;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #053272;
+    cursor: pointer;
+}
+
+.menu-body a{
+    text-decoration: none;
+    color: #053272;
+}
+
+.menu-body a:after{
+    content: '';
+    display: block;
+    height: 2.5px;
+    background-color: #FFA95C;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    margin-top: -0px;
+}
+
+.menu-body a:hover:after{
+    transform:scale(1);
+}
+
+.btn-more {
+    width: 71px;
+    height: 30.07px;
+    transition: all 0.5s;
+}
+
+
+.btn-more button {
+    width: 100%;
+    height: 100%;
+    background-color: #234386;
+    border: none;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-more button:hover {
+    background-color: #053272;
+    transition: all 0.5s;
+}
+
+.btn-more button:focus {
+    outline: 0;
+} 
+
+.about_committee {
+    position: relative;
+    width: 92px;
+    height: 0px;
+    background-color: #FFFFFF;
+    left: -14px;
+    transition: heigh 2s;
+    overflow: hidden;
+}
+
+.about_committee a {
+    width: 76px;
+    background-color: #FFFFFF;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+
+.about_committee {
+    list-style: none;
+    transition: all .5s;
+    padding-left: 0;
+}
+
+
+.about_committee a:hover {
+    background-color:  rgba(196, 196, 196, 0.26);
+    transition: all 0.5s;
+}
+
+.li_about:hover .about_committee {
+   height: 68px;
+   transition: all .5s;
+}
+
+.li_about {
+    width: 86px;
+}
+
+.li_about a {
+   display: flex;
+}
+
+.li_about img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.about_committee a:after {
+    background-color: transparent;
+}
+
+/* 行头中部 */
+.head-body {
+    display: flex;
+}
+
+.left-color {
+    width: 172px;
+    height: 376px;
+    background: url(img/left-color.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 145px;
+}
+
+.sune-net-logo {
+    width: 443px;
+    height: 293px;
+    background: url(img/net-logo.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 252px;
+    top: 137px;
+}
+
+.xtu-bc {
+    width: 624.22px;
+    height: 561px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(img/xtu-bc.png) no-repeat;
+    background-size: 100%;
+}
+
+.xtu-bc .all-img-btn {
+    width: 48px;
+    height: 48px;
+    background: url(img/all-img.png) no-repeat;
+    background-size: 90%;
+    position: absolute;
+    top: 286px;
+    left: 60px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.xtu-bc .xtu-photo {
+    width: 562.36px;
+    height: 560.9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(img/xtu.png) no-repeat;
+    background-size: 100%;
+}
+
+/* 新闻内容板块 */
+#content {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content-body {
+    width: 100%;
+}
+
+.content-container {
+    width: 100%;
+}
+
+.content-container h1 {
+    font-family: Microsoft YaHei;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13.664px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.content-container h2 {
+    font-family: Microsoft YaHei;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 10.627px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.content-container span {
+    font-family: Microsoft YaHei;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 10.627px;
+    line-height: 14px;
+    color: #000000;
+    position: absolute;
+    left: 45%;
+}
+
+.content-head-title {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30.017px;
+    line-height: 38px;
+    color: #053272;
+    position: relative;
+    left: 218.99px;
+    display: block;
+}
+
+.content-container p:after {
+    content: '';
+    display: block;
+    width: 20vw;
+    border: 1.668px solid #053272;
+}
+/* 校园动态 */
+.school-dynamic {
+    width: 71.86vw;
+    height: 95vh;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    margin-top: 2vh;
+    margin-left: 14.07vw;
+    box-shadow: 0px 4px 8px rgba(183, 183, 183, 0.2);
+}
+
+.school-dynamic p {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.773px;
+    line-height: 29px;
+    color: #053272;
+    margin-left: 20px;
+    padding-top: 14px;
+    display: block;
+}
+
+.school-dynamic p:after {
+    margin-top: 8px;
+    content: '';
+    display: block;
+    border: 1.268px solid #053272 !important;
+}
+
+.dynamic-img-abstract {
+    width: 94.41%;
+    height: 84.3%;
+    margin-left: 2.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dynamic-body-left {
+    width: 47.16%;
+    height: 100%;
+}
+
+.dynamic-body-right {
+    width: 42.016%;
+    height: 100%;
+}
+
+.dynamic-left-content-first {
+    width: 100%;
+    height: 57.5%;
+    border-bottom: 0.38px solid #053272;
+}
+
+.dynamic-left-content-first img {
+    width: 100%;
+    height: 78%;
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.dynamic-left-content-bottom {
+    width: 100%;
+    height: 42.3%;
+    margin-top: 15px;
+}
+
+.dynamic-left-bottom {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.dynamic-left-bottom img {
+    width: 15.37%;
+    height: 90%;
+    background-size: 100%;
+}
+
+.dynamic-left-bottom-content {
+    width: 82.5%;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.dynamic-left-bottom-content h1 {
+    margin: 0;
+}
+
+.dynamic-left-bottom-content h2 {
+    margin-top: 3px;
+}
+
+
+
+
+/* 一行两块 */
+.double-div {
+    width: 71.86vw;
+    height: 89vh;
+    background-color: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+    margin-top: 6vh;
+    margin-left: 14.07vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+/* 人物专访 */
+.character-interview {
+    width: 34.97vw;
+    height: 89vh;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(183, 183, 183, 0.2);
+}
+
+.character-interview p {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.773px;
+    line-height: 29px;
+    color: #053272;
+    margin-left: 20px;
+    display: block;
+}
+
+/* 创新创业 */
+.content-innovation {
+    width: 34.97vw;
+    height: 89vh;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(183, 183, 183, 0.2);
+}
+
+.content-innovation p {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22.773px;
+    line-height: 29px;
+    color: #053272;
+    margin-left: 20px;
+    display: block;
+}
+
+
+/* 内容底部 */
+.content-footer {
+    width: 100vw;
+    height: 44.90vh;
+    background: url(img/content_footer.png) no-repeat;
+    background-size: 100%;
+}
+
+/* footer */
+#footer {
+    width: 100vw;
+    height: 47.51vh;
+    background-color: #03397A;
+
+}
+
+
+.footer-up {
+    display: flex;
+    width: 60.17%;
+    margin-left: 19.915vw;
+    border-bottom: 0.75px solid #FFFFFF;
+}
+
+.footer-up p {
+    margin-top: 0;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.call-us-div {
+    margin-top: 8.65vh;
+}
+
+.call-us-div p {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.footer-menu-div {
+    margin-top: 8.65vh;
+}
+
+.footer-menu-div p {
+    font-family: Microsoft JhengHei UI;
+    margin-left: 9.9vw;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.call-us {
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.footer-menu {
+    margin-left: 10.9vw;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.right-div {
+    margin-left: 10.25vw;
+    margin-top: 8.65vh;
+}
+
+.right-div p {
+    display: block;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 5vh;
+}
+
+.right-down {
+    position: relative;
+    display: flex;
+}
+
+.right-down img:nth-child(1) {
+    width: 78.95px;
+    height: 112px;
+    background-size: 100%;
+}
+
+.right-down img:nth-child(2) {
+    background-size: 100%;
+    width: 125.56px;
+    height: 47.15px;
+    margin-top: 3.2vh;
+    margin-left: 15px;
+}
+
+.footer-down {
+    display: flex;
+    width: 60.17%;
+    margin-left: 19.915vw;
+}
+
+.footer-down p {
+    display: block;
+    font-family: Microsoft JhengHei UI;
+    font-style: normal;
+    font-weight: 290;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
